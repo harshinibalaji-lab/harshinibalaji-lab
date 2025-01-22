@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Shop</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6zSwyxeJF3wj5qybLI0hSsnBr5_fnRj55w&s'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(2, 80, 2);
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: greenyellow;
+            text-decoration: none;
+            padding: 8px 15px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #333;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            min-width: 150px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .menu-toggle div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+        }
+        @media (max-width: 768px) {
+            .navbar-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 50px;
+                left: 0;
+            }
+            .navbar-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: flex;
+            }
+        }
+        .content {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        #vegetable {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #carrot {
+            background-image: url('https://static.toiimg.com/thumb/msid-107390148,width-1280,height-720,resizemode-4/107390148.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #beetroot {
+            background-image: url('https://hips.hearstapps.com/hmg-prod/images/beetroof-health-benefits-1637616232.jpg'); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #tomato {
+            background-image: url('https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?cs=srgb&dl=pexels-julia-nagy-568948-1327838.jpg&fm=jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; 
+        }
+        .content h2 {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#vegetable">Home</a>
+        <a href="https://en.wikipedia.org/wiki/Vegetable">About</a>
+        <div class="dropdown">
+            <a href="#" class="dropdown-btn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#carrot"> Carrot</a>
+                <a href="#beetroot"> Beetroot</a>
+                <a href="#tomato"> Tomato</a>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="content" id="vegetable">
+        <h2>Welcome to Our Fresh Vegetable Shop</h2>
+        <p>We are your go-to destination for the freshest and most organic vegetables. Our e-commerce platform brings farm-to-table produce right to your doorstep. With a wide variety of seasonal and exotic vegetables, we ensure quality and freshness in every bite. Here’s why you should choose us:</p>
+        <ul>
+            <li>Fresh produce sourced daily from trusted farms.</li>
+            <li>Convenient online ordering and delivery services.</li>
+            <li>Affordable prices with no compromise on quality.</li>
+            <li>Eco-friendly packaging to reduce environmental impact.</li>
+        </ul>
+        <p>Browse our catalog to explore a world of healthy and delicious vegetables. Your health is our priority!</p>
+        <h2 class="world">What YOU KNOW...</h2>
+        <form action="">
+            <input class="world" type="text" placeholder="Enter your thoughts">
+            <input type="submit" class="love" value="Submit">
+        </form>
+        
+    </div>
+
+    <div class="content" id="carrot">
+        <h2>Carrot</h2>
+        <p>Carrots are root vegetables known for their bright orange color...</p>
+        <p><li>Appearance</li>
+            <li> Carrots are usually long, with a wide top and smaller end 
+            <li>The skin is smooth, but may have wrinkles</li> 
+            <li>Fresh carrots should be firm and crisp, with smooth and unblemished skin 
+            Taste Carrots are sweet and Smaller carrots are the most tender. </li>
+            <li> Nutrition </li>
+            <li> Carrots are a good source of fiber, vitamin A, vitamin K1, potassium, and antioxidants
+            They are low in calories</li>
+            <li>Uses </li>
+            <li> Carrots can be eaten raw or cooked</li>
+            <li>They can be used in salads, stews, soups, sauces, and cakes</li>
+            <li>The juice of the carrot can be a sweet drink</li>
+            Health benefits </li>
+            <li>Carrots can help with vision, digestive health, and immune function</li>
+            <li></li>They can also help with blood pressure and cardiovascular health, bone health, and healing</li></p>
+    </div>
+
+    <div class="content" id="beetroot">
+        <h2>Beetroot</h2>
+        <p>Beetroot, also known simply as beet, is a vibrant root vegetable...</p>
+        <p>The domestication of beetroot can be traced to the emergence of an allele that enables biennial harvesting of leaves and taproot. Beetroot was domesticated in the ancient Middle East, primarily for their greens, and were grown by the Ancient Egyptians, Greeks, and Romans. By the Roman era, it is thought that they were also cultivated for their roots. From the Middle Ages, beetroot was used to treat various conditions, especially illnesses relating to digestion and the blood. Bartolomeo Platina recommended taking beetroot with garlic to nullify the effects of garlic breath</p>
+        <p><li>Nutrition</li>
+        <li>Beetroot is high in fiber, vitamins, minerals, and antioxidants. </li>
+        <li> Beetroot contains betalains, a powerful antioxidant that gives beets their color. </li>
+        <li> Beetroot also contains nitrates, which can help lower blood pressure. </li>
+        <li>Health benefits</li>
+        <li>Beetroot can help improve heart health, reduce blood pressure, and enhance exercise capacity. </li>
+        <li> Beetroot can also help protect the liver and kidneys. </li>
+        </p>
+    </div>
+
+    <div class="content" id="tomato">
+        <h2>Tomato</h2>
+        <p>The tomato is a widely consumed fruit...</p>
+        <p>Tomato plants are vines, largely annual and vulnerable to frost, though sometimes living longer in greenhouses. The flowers are able to self-fertilise. Modern varieties have been bred to ripen uniformly red, in a process that has impaired the fruit's sweetness and flavor. There are thousands of cultivars, varying in size, color, shape, and flavor. Tomatoes are attacked by many insect pests and nematodes, and are subject to diseases caused by viruses and by mildew and blight fungi.</P>
+        <p><li>Uses</li>
+        </li>Tomatoes are eaten raw in salads.</li>
+    </li>Tomatoes are used in cooking, such as in sauces, salsas, and stews.</li>
+<li>Tomatoes are canned and used in tomato juice.</li>
+<li>Health benefits</li>
+<li>Tomatoes are a good source of vitamin C, potassium, and other nutrients.</li>
+<li>Tomatoes contain lycopene, which is an antioxidant that may help protect cells from damage.</li>
+<li>Tomatoes may help with heart health, immunity, and lowering the risk of cancer</li></p>    
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        menuToggle.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
